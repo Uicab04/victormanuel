@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import './styles/Projects.css';
+
+const Project = ({ title, technologies, image }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div 
+      className="custom-project" 
+      onMouseEnter={() => setIsHovered(true)} 
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="custom-project__image-container">
+        <img src={image} alt={title} className="custom-project__image" />
+        <div className={`custom-project__overlay ${isHovered ? 'visible' : ''}`}>
+          <h3 className="custom-project__title">{title}</h3>
+        </div>
+      </div>
+      
+      <div className="custom-project__technologies">
+        {technologies.map((tech, index) => (
+          <div key={index} className={`icon ${tech.toLowerCase()}`}>{tech}</div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Proyecto 1",
+      technologies: ["PHP", "JavaScript", "CSS"],
+      image: "imagen/learnvlas.png",
+    },
+    {
+      title: "Proyecto 2",
+      technologies: ["PHP", "JavaScript", "CSS"],
+      image: "/imagen/learnvlas.png",
+    },
+    {
+      title: "Proyecto 3",
+      technologies: ["PHP", "JavaScript", "CSS"],
+      image: "https://link-a-image-proyecto3.com/image.png",
+    },
+  ];
+
+  return (
+    <section id="custom-proyectos" className="custom-section">
+      <h2 className="custom-section__title">Proyectos Realizados</h2>
+      <div className="custom-section__content">
+        {projects.map((project, index) => (
+          <Project 
+            key={index} 
+            title={project.title} 
+            technologies={project.technologies} 
+            image={project.image} 
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

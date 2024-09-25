@@ -1,0 +1,58 @@
+/* Experience.css */
+
+/* Estilos generales para la sección de experiencia */
+#experiencia {
+  font-family: Arial, sans-serif; /* Usa Arial como fuente principal */
+  text-align: center; /* Centrar el texto en toda la sección */
+  padding: 40px 20px; /* Espaciado interno */
+  background-color: #f9f9f9; /* Fondo claro para mejorar la legibilidad */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+.section__title {
+  font-size: 2.5em; /* Tamaño del título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #007BFF; /* Color del título */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar */
+}
+
+.section__content {
+  margin-top: 10px;
+  font-size: 1.1em; /* Tamaño del texto */
+  text-align: justify; /* Justificar el texto */
+  max-width: 800px; /* Limitar el ancho para mejorar la legibilidad */
+  margin-left: auto; /* Centrar el contenido horizontalmente */
+  margin-right: auto; /* Centrar el contenido horizontalmente */
+  line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+  color: #333; /* Color del texto */
+}
+
+.section__list {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+  margin-top: 20px; /* Espacio superior para la lista */
+}
+
+.section__list-item {
+  margin-bottom: 15px; /* Espacio entre elementos de la lista */
+  padding: 10px; /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco para los elementos de la lista */
+  border-radius: 5px; /* Bordes redondeados para los elementos de la lista */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil para los elementos de la lista */
+  transition: transform 0.2s; /* Efecto de transformación */
+}
+
+.section__list-item:hover {
+  transform: scale(1.02); /* Efecto de zoom al pasar el ratón */
+}
+
+.section__link {
+  color: #007BFF; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.section__link:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+  color: #0056b3; /* Color más oscuro al pasar el ratón */
+}

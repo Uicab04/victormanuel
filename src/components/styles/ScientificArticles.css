@@ -1,0 +1,43 @@
+.scientific-articles-section {
+    padding: 20px;
+  }
+  
+  .scientific-articles__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .scientific-articles__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scientific-articles__item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .scientific-articles__item-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .scientific-articles__item-description {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .scientific-articles__download-button {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .scientific-articles__download-button:hover {
+    background-color: #0056b3;
+  }
+  

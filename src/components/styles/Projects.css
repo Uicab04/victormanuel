@@ -1,0 +1,240 @@
+/* Projects.css */
+
+/* General styles for the section */
+.custom-section {
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Establecer Arial como fuente */
+}
+
+.custom-section__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-section__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styles for each project */
+.custom-project {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra negra para darle profundidad */
+  margin: 10px;
+  padding: 0; /* Removed padding to allow full image display */
+  width: 300px; /* Ancho fijo para los cuadros */
+  position: relative; /* Para posicionar el hover info */
+  overflow: hidden; /* Hide overflow for absolute elements */
+  transition: transform 0.3s ease;
+}
+
+.custom-project:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+.custom-project__image-container {
+  position: relative; /* Positioning for overlay */
+}
+
+.custom-project__image {
+  width: 100%;
+  height: auto; /* Ensure the image maintains its aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Overlay styles */
+/* Overlay styles */
+.custom-project__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease;
+}
+
+.custom-project:hover .custom-project__overlay {
+  opacity: 1; /* Muestra al pasar el ratón */
+}
+
+/* Título */
+.custom-project__title-static {
+  font-size: 1.5em;
+  margin: 10px 0; /* Margen ajustado */
+  text-align: center; /* Centrar título */
+  color: white; /* Color blanco para el título */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+
+
+
+
+.custom-project__image-container {
+  position: relative; /* Necesario para posicionar el título dentro de la imagen */
+}
+
+.custom-project__static-title {
+  position: absolute; /* Posición absoluta para colocar el título dentro de la imagen */
+  top: 10px; /* Ajusta según sea necesario */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translateX(-50%); /* Centrar el título */
+  font-size: 1.2em; /* Tamaño de fuente para el título estático */
+  color: white; /* Color del texto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+  z-index: 1; /* Asegurarse de que esté por encima de la imagen */
+}
+.custom-project:hover .custom-project__static-title {
+  opacity: 0; /* Ocultar el título al pasar el ratón */
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+/* fin titulo descripcion hover */
+
+
+
+
+/* Align technologies to the right within the card */
+.custom-project__technologies {
+  display: flex;
+  justify-content: flex-end; /* Align icons to the right */
+  margin: 10px 10px 0 0; /* Margen para separar de los bordes y mover hacia abajo */
+  position: absolute; /* Positioning within the card */
+  bottom: 50px; /* Ajustar posición más abajo */
+  right: 10px; /* Alinear a la derecha */
+  width: auto; /* Allow it to fit content */
+}
+
+.custom-project__tech-icon {
+  width: 30px; /* Tamaño de los íconos de tecnologías */
+  height: 30px;
+  margin-left: 5px; /* Space between icons */
+}
+
+/* Link styles */
+.custom-project__link {
+  display: block; /* Asegúrate de que el botón ocupe todo el ancho disponible */
+  text-align: center;
+  background: linear-gradient(135deg, #007BFF, #0056b3, #011932); /* Degradado de fondo */
+  color: white;
+  padding: 15px; /* Aumentar el padding para hacerlo más grande */
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: auto; /* Asegura que el botón se empuje hacia abajo */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Asegúrate de que el botón ocupe todo el ancho */
+}
+
+.custom-project__link:hover {
+  background: linear-gradient(135deg, #0056b3, #007BFF, #011932); /* Degradado al pasar el ratón */
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+
+
+
+
+
+/* abrir el royecto descripcion */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.project-modal__content {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 700px; /* Mantener el ancho máximo */
+  max-height: 500px; /* Establecer un máximo de altura para la tarjeta */
+  overflow-y: auto; /* Permitir el desplazamiento si el contenido excede la altura máxima */
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para alinear el encabezado y el contenido */
+}
+
+
+.project-modal__header {
+  display: flex;
+  justify-content: flex-end; /* Alinear el botón de cierre a la derecha */
+}
+
+.project-modal__close {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.project-modal__flex-container {
+  display: flex;
+  align-items: flex-start; /* Alinear la imagen y el texto al inicio */
+}
+
+.project-modal__image {
+  max-width: 300px; /* Aumentar el ancho máximo de la imagen */
+  height: auto;
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.project-modal__details {
+  flex: 1;
+  font-size: 0.85em; /* Hacer el texto un poco más pequeño */
+}
+
+
+.project-modal__buttons {
+  margin-bottom: 10px; /* Espacio debajo de los botones */
+}
+
+.project-modal__button {
+  display: block; /* Asegúrate de que el botón ocupe todo el ancho disponible */
+  text-align: center;
+  background: linear-gradient(135deg, #007BFF, #0056b3, #011932); /* Degradado de fondo */
+  color: white;
+  padding: 10px; /* Ajustar el padding según sea necesario */
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0; /* Margen vertical para separar los botones */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 80%; /* Asegúrate de que el botón ocupe todo el ancho */
+}
+
+.project-modal__button:hover {
+  background: linear-gradient(135deg, #0056b3, #007BFF, #011932); /* Degradado al pasar el ratón */
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+.custom-project__image-container {
+  position: relative;
+}
+
+.custom-project__type {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.project-modal__type {
+  margin-bottom: 10px; /* Space below the type title */
+  font-weight: bold;
+}

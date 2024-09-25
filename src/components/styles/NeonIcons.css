@@ -1,0 +1,95 @@
+.custom-project__technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 30px; /* Tamaño reducido de los íconos */
+    height: 30px; /* Tamaño reducido de los íconos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #00f, 
+        0 0 10px #00f, 
+        0 0 20px #00f; /* Brillo azul */
+    box-shadow: 
+        0 0 10px #00f, 
+        0 0 20px #00f, 
+        0 0 30px #00f; /* Brillo azul externo */
+    transition: transform 0.3s, text-shadow 0.3s, box-shadow 0.3s; /* Añadir transición para el brillo */
+    font-size: 12px; /* Tamaño de fuente reducido */
+    z-index: 1;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    text-shadow: 
+        0 0 10px #00f, 
+        0 0 20px #00f, 
+        0 0 40px #00f; /* Efecto de brillo al pasar el mouse */
+    box-shadow: 
+        0 0 15px #00f, 
+        0 0 30px #00f, 
+        0 0 50px #00f; /* Aumentar el brillo externo al pasar el mouse */
+}
+
+.php {
+    background-color: #4F5B93;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.js {
+    background-color: #f2de04b8; /* Amarillo neón */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* Triángulo */
+    color: #000; /* Color de texto negro */
+    text-shadow: 
+        0 0 5px #ff0, 
+        0 0 10px #ff0, 
+        0 0 20px #ff0; /* Brillo amarillo */
+    box-shadow: 
+        0 0 10px #ff0, 
+        0 0 20px #ff0, 
+        0 0 30px #ff0; /* Brillo amarillo externo */
+}
+
+.mysql {
+    background-color: #00758F; /* Color para MySQL */
+    border-radius: 50%;
+    box-shadow: 
+        0 0 10px #00758F, 
+        0 0 20px #00758F; /* Brillo para MySQL */
+}
+/* Estilo específico para HTML */
+.html {
+    background-color: #E44D26; /* Color para HTML */
+    clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 0% 85%, 0% 15%); /* Pentágono */
+    box-shadow: 
+        0 0 10px #E44D26, 
+        0 0 20px #E44D26, 
+        0 0 30px #E44D26; /* Brillo rojo */
+    text-shadow: 
+        0 0 5px #FF5733, 
+        0 0 10px #FF5733, 
+        0 0 20px #FF5733; /* Brillo rojo */
+}
+
+/* Estilo específico para CSS */
+.css {
+    background-color: #264DE4; /* Color para CSS */
+    clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 0% 85%, 0% 15%); /* Pentágono */
+    box-shadow: 
+        0 0 10px #264DE4, 
+        0 0 20px #264DE4, 
+        0 0 30px #264DE4; /* Brillo azul */
+    text-shadow: 
+        0 0 5px #33AFFF, 
+        0 0 10px #33AFFF, 
+        0 0 20px #33AFFF; /* Brillo azul */
+}

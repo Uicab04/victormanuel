@@ -1,0 +1,161 @@
+/* Global Reset and Font Rendering */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Code Styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Styles for the container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header styles */
+.header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header__subtitle {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.header__nav {
+  margin-top: 15px;
+}
+
+.header__nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav-item {
+  margin: 0 15px;
+}
+
+.header__nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header__nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content Styles */
+.main {
+  padding: 40px 20px;
+  background: white;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section__title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.section__subtitle {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #555;
+}
+
+.section__content {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.section__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section__list-item {
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.section__link {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.section__link:hover {
+  color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #007BFF;
+  color: white;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header__nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav-item {
+    margin: 5px 0;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .section__title {
+    font-size: 1.8em;
+  }
+
+  .section__subtitle {
+    font-size: 1.3em;
+  }
+}
