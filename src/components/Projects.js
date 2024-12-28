@@ -64,7 +64,8 @@ const Projects = () => {
     {
       title: "Geek",
       description: "Formar comunidad de programadores para compra de proyectos.",
-      link: "https://geek-two.vercel.app/",
+      link: "learnvelas.lovestoblog.com",
+    //"https://geek-two.vercel.app/"
       github: "https://github.com/Uicab04/geek",
       image: "imagen/GEEK.png",
       technologies: ["React", "JS"],
