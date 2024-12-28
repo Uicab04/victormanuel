@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: "Learn Velas",
       description: "Es una página de apredizaje E-learning para los colaboradores de Grand Velas Riviera Maya.",
-      link: "learnvelas.lovestoblog.com",
+      link: "http://learnvelas.lovestoblog.com/",
       github: "https://github.com/Uicab04/learnvelas",
       image: "imagen/learnvlas.png",
       technologies: ["PHP", "JS", "MySQL"],
