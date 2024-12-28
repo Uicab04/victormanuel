@@ -64,7 +64,7 @@ const Projects = () => {
     {
       title: "Geek",
       description: "Formar comunidad de programadores para compra de proyectos.",
-      link: "learnvelas.lovestoblog.com",
+      link: "geek-two.vercel.app",
     //"https://geek-two.vercel.app/"
       github: "https://github.com/Uicab04/geek",
       image: "imagen/GEEK.png",
@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: "Learn Velas",
       description: "Es una página de apredizaje E-learning para los colaboradores de Grand Velas Riviera Maya.",
-      link: "http://learnvelas.wuaze.com/",
+      link: "learnvelas.lovestoblog.com",
       github: "https://github.com/Uicab04/learnvelas",
       image: "imagen/learnvlas.png",
       technologies: ["PHP", "JS", "MySQL"],
