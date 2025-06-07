@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: "Learn Velas",
       description: "Es una página de apredizaje E-learning para los colaboradores de Grand Velas Riviera Maya.",
-      link: "http://learnvelas.lovestoblog.com/",
+      link: "http://www.learnvelas4.com.mialias.net/",
       github: "https://github.com/Uicab04/learnvelas",
       image: "imagen/learnvlas.png",
       technologies: ["PHP", "JS", "MySQL"],
@@ -89,7 +89,7 @@ const Projects = () => {
     {
       title: "Expendios BIMBO",
       description: "Fue un sistema para los expendios BIMBO.",
-      link: "http://expendiobimbo.kesug.com/",
+      link: "http://www.expendiobimbo.com.mialias.net/",
       github: "https://github.com/Uicab04/expendio",
       image: "imagen/expendio.png",
       technologies: ["PHP", "JS", "MySQL"],
@@ -102,7 +102,7 @@ const Projects = () => {
     {
       title: "HealtFolder",
       description: "Centralización de expedientes médicos.",
-      link: "http://healtfolder.kesug.com/",
+      link: "http://healtfolder.sa.mialias.net/",
       github: "https://github.com/Uicab04/HealthFolder",
       image: "imagen/image.png",
       technologies: ["PHP", "JS", "MySQL"],
