@@ -130,7 +130,7 @@ const Projects = () => {
 
   return (
     <section id="custom-proyectos" className="custom-section">
-      <h2 className="custom-section__title">Proyectos Realizados</h2>
+      <h2 className="custom-section__title">Proyectos Realizado DEMOS</h2>
       <div className="custom-section__content">
         {projects.map((project, index) => (
           <Project 
