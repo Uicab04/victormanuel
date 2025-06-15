@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: "Learn Velas",
       description: "Es una página de apredizaje E-learning para los colaboradores de Grand Velas Riviera Maya.",
-      link: "http://www.learnvelas4.com.mialias.net/",
+      link: "http://www.learnvelas.kesug.com/",
       github: "https://github.com/Uicab04/learnvelas",
       image: "imagen/learnvlas.png",
       technologies: ["PHP", "JS", "MySQL"],
@@ -89,7 +89,7 @@ const Projects = () => {
     {
       title: "Expendios BIMBO",
       description: "Fue un sistema para los expendios BIMBO.",
-      link: "http://www.expendiobimbo.com.mialias.net/",
+      link: "http://www.expendiobimbo.wuaze.com/",
       github: "https://github.com/Uicab04/expendio",
       image: "imagen/expendio.png",
       technologies: ["PHP", "JS", "MySQL"],
