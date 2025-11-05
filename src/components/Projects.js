@@ -62,6 +62,19 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "TORTILLERIA Y TOTOPOS",
+      description: "Es una página de inventariado de tortillas y totopos.",
+      link: "https://www.TORTILLERIA.wuaze.com",
+      github: "https://github.com/Uicab04/victormanuel/tree/main/src",
+      image: "imagen/tortilleria.jpg",
+      technologies: ["PHP", "JS", "MySQL"],
+      type: "ERP",
+      date: "ene. 2024 - may. 2024",
+      details: "Página de ERP para administracion de empresa alienticia",
+      adminUser: "uicab.nahuat.victor@cbta80.edu.mx",
+      adminPassword: "aaaa"
+    },
+    {
       title: "Geek",
       description: "Formar comunidad de programadores para compra de proyectos.",
       link: "geek-two.vercel.app",
