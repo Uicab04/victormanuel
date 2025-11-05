@@ -66,7 +66,7 @@ const Projects = () => {
       description: "Es una página de inventariado de tortillas y totopos.",
       link: "https://www.TORTILLERIA.wuaze.com",
       github: "https://github.com/Uicab04/victormanuel/tree/main/src",
-      image: "imagen/tortilleria.jpg",
+      image: "imagen/tortilleria.png",
       technologies: ["PHP", "JS", "MySQL"],
       type: "ERP",
       date: "ene. 2024 - may. 2024",
